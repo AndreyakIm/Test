@@ -1,0 +1,6 @@
+SELECT * 
+FROM products 
+LEFT JOIN product_connection
+	ON products.ID = product_connection.ProductId 
+LEFT JOIN categories 
+	ON categories.ID = product_connection.CategoryId
